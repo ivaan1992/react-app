@@ -1,0 +1,14 @@
+.d-flex {
+  display: flex;
+}
+
+.app-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  padding-right: 5rem;
+  text-decoration: none;
+  color: blue;
+}
