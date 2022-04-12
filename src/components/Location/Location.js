@@ -2,7 +2,7 @@ import React from 'react';
 
 const Location = () => (
   <div>
-    <h1>location section</h1>
+    <h1>Location section</h1>
   </div>
 );
 
