@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getLocations } from '../../redux/Location/LocationRedux';
 import LocationInfo from './LocationInfo';
+import SelectLocation from './SelectLocation';
 
 const Location = () => {
   const [location] = useState(1);
@@ -23,10 +24,11 @@ const Location = () => {
             name={name}
             type={type}
             dimension={dimension}
-            residents={residents}
+            img={residents}
           />
         ))
       }
+      <SelectLocation />
     </div>
   );
 };
