@@ -1,0 +1,14 @@
+.d-flex {
+  display: flex;
+}
+
+.prev-next-btns {
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-next-btn {
+  margin-right: 4rem;
+  width: 10rem;
+  height: 5vh;
+}

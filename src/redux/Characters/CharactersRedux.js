@@ -1,4 +1,4 @@
-import fetchChars from '../Api/characterApi';
+import connectCharApi from '../Api/characterApi';
 
 const CHARACTERS = 'redux/actions/get_characters';
 
@@ -10,8 +10,7 @@ const characters = (character) => ({
 });
 
 export const getCharacter = (page, dispatch) => {
-  fetchChars(page).then(({ results }) => {
-    console.log(results);
+  connectCharApi(page).then(({ results }) => {
     dispatch(characters(results));
   });
 };

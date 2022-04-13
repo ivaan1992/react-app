@@ -1,7 +1,9 @@
-import connectApi from './base';
+const BASE_URL = 'https://rickandmortyapi.com/api';
 
-const CHAR = 'character';
+const connectCharApi = async (page = 1) => {
+  const response = await fetch(`${BASE_URL}/character?page=${page}`);
+  const data = await response.json();
+  return data;
+};
 
-const fetchChars = (page) => connectApi(page, CHAR);
-
-export default fetchChars;
+export default connectCharApi;

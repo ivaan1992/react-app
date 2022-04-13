@@ -1,4 +1,4 @@
-const BASE_URL = 'https://rickandmortyapi.com/api';
+/* const BASE_URL = 'https://rickandmortyapi.com/api';
 
 const connectApi = async (page = 1, type) => {
   const response = await fetch(`${BASE_URL}/${type}?page=${page}`);
@@ -6,4 +6,4 @@ const connectApi = async (page = 1, type) => {
   return data;
 };
 
-export default connectApi;
+export default connectApi;  */
