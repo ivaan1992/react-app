@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import CharacterInfo from './CharacterInfo';
-import Pagination from './Pagination';
+import PrevNextBtns from './PrevNextBtns';
 
 const Characters = () => {
   const chars = useSelector((state) => state.characterReducer);
@@ -24,7 +24,7 @@ const Characters = () => {
             />
           ))
       }
-      <Pagination />
+      <PrevNextBtns />
     </div>
   );
 };

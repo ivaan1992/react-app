@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getCharacter } from '../../redux/Characters/CharactersRedux';
-import './Pagination.css';
+import './PrevNextBtns.css';
 
-const Pagination = () => {
+const PrevNextBtns = () => {
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
 
@@ -20,4 +20,4 @@ const Pagination = () => {
     </div>
   );
 };
-export default Pagination;
+export default PrevNextBtns;
