@@ -1,4 +1,4 @@
-.d-flex{
+.d-flex {
   display: flex;
 }
 
@@ -22,9 +22,9 @@
 
 .card-catalogue {
   width: 80%;
+  margin: 0 auto;
   margin-bottom: 3rem;
   border-radius: 1rem;
-  margin: 0 auto;
   background: #3c3e44;
 }
 
