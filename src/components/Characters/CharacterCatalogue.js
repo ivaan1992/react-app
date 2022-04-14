@@ -9,25 +9,21 @@ const CharacterCatalogue = ({
     <img src={img} alt={name} />
     <div className="info-character-catalogue">
       <h1 className="character-name-cat">{name}</h1>
-      <div className="status-red">{status}</div>
-      {/*
-
-        () => (
-            if (status === 'Dead') {
-              return (
-                <div className="status-red">{status}</div>
-              );
-            } if (status === 'Alive') {
-              return (
-                <div className="status-green">{status}</div>
-              );
-            } if (status === 'Unknown') {
-              return (
-                <div className="status-gray">{status}</div>
-              );
-            }
-        )
-      */ }
+      {(
+        () => {
+          if (status === 'Dead') {
+            return (
+              <div className="status-red">{status}</div>
+            );
+          } if (status === 'Alive') {
+            return (
+              <div className="status-green">{status}</div>
+            );
+          } return (
+            <div className="status-gray">{status}</div>
+          );
+        }
+      )()}
       <h3>{location.name}</h3>
     </div>
   </div>
