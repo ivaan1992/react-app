@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import PropTypes from 'prop-types';
 
 const CharacterInfo = ({
@@ -27,4 +27,4 @@ CharacterInfo.propTypes = {
   type: PropTypes.string.isRequired,
 };
 
-export default CharacterInfo;
+export default CharacterInfo; */

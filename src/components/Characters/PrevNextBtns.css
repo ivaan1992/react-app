@@ -5,6 +5,7 @@
 .prev-next-btns {
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 }
 
 .prev-next-btn {
