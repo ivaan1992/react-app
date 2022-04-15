@@ -11,10 +11,7 @@ const Episodes = () => {
   const total = useSelector((state) => state.episodeReducer.total);
   const selectedEpisode = useSelector((state) => state.episodeReducer.selectedEpisode);
   const chars = useSelector((state) => state.episodeReducer.characters);
-  console.log({
-    total,
-    chars,
-  });
+
   useEffect(() => {
     getEpisodes({ page: '1', dispatch });
   }, []);
