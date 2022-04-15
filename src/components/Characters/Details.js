@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getCharacter } from '../../redux/Characters/CharactersRedux';
+import './Characters.css';
 
 const Details = ({ isVisible, onClickEvent }) => {
   const dispatch = useDispatch();
@@ -16,8 +17,8 @@ const Details = ({ isVisible, onClickEvent }) => {
   return (
     <>
       { isVisible ? (
-        <div>
-          <button onClick={onClickEvent} type="button">CLOSE</button>
+        <div className="popup d-flex">
+          <button onClick={onClickEvent} type="button" className="x d-flex">X</button>
           <img src={img} alt={name} />
           <div className="info">
             <h1>{name}</h1>

@@ -72,6 +72,7 @@
   border-radius: 4rem;
   font-weight: bold;
   background: #af1515;
+  margin-top: 1rem;
 }
 
 .status-red p{
@@ -84,6 +85,7 @@
   border-radius: 4rem;
   background: #15af3b;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .status-green p{
@@ -95,7 +97,8 @@
   width: 1.25rem;
   border-radius: 4rem;
   font-weight: bold;
-  background: rgb(82, 80, 80)
+  background: rgb(82, 80, 80);
+  margin-top: 1rem;
 }
 
 .status-gray p{
@@ -138,4 +141,34 @@
   font-weight: 800;
   border-radius: 0.5rem;
   border: none;
+}
+
+.search-bar-name:hover {
+  background: #fa9805;
+}
+
+.popup {
+  width: 30%;
+  height: auto;
+  flex-direction: column;
+}
+
+.x {
+  width: 3rem;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  background: red;
+}
+
+.close-image {
+  justify-content: center;
+  align-items: flex-end;
+  border: 3px solid yellow;
+}
+
+.info {
+  background: #fff;
 }
