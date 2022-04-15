@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Episode 1`] = `
+<div
+  className="d-flex episode-container"
+>
+  <div
+    className="episode-selector"
+  >
+    <select
+      className="selector"
+      name="episodes"
+      onChange={[Function]}
+    />
+  </div>
+  <div
+    className="episode-card-title-content"
+  >
+    <div
+      className="d-flex episode-info"
+    >
+      <h1
+        className="episode-info-title"
+      />
+      <h5
+        className="episode-info-date"
+      />
+      <h5
+        className="episode-info-number"
+      />
+    </div>
+    <div
+      className=""
+    >
+      <div
+        className="chars"
+      />
+    </div>
+  </div>
+</div>
+`;

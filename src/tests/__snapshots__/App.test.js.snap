@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Renders Correctly 1`] = `
+Array [
+  <header
+    className="d-flex app-header"
+  >
+    <h1
+      className="header-title"
+    >
+      Rick & Morty App
+    </h1>
+    <nav
+      className="d-flex"
+    >
+      <a
+        aria-current="page"
+        className="d-flex links active"
+        href="/"
+        onClick={[Function]}
+      >
+        Characters
+      </a>
+      <a
+        className="d-flex links"
+        href="/Episodes"
+        onClick={[Function]}
+      >
+        Episodes
+      </a>
+    </nav>
+  </header>,
+  <div
+    className="d-flex chars-container"
+  >
+    <form
+      className="search-char-form"
+      onSubmit={[Function]}
+    >
+      <input
+        className="search-bar-char"
+        name="name"
+        onChange={[Function]}
+        placeholder="Search by Name"
+      />
+      <button
+        className="search-bar-name"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <div
+      className="chars-cards"
+    />
+    <div
+      className=" d-flex prev-next-btns"
+    >
+      <button
+        className="prev-next-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
+      <button
+        className="prev-next-btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Characters 1`] = `
+<div
+  className="d-flex chars-container"
+>
+  <form
+    className="search-char-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="search-bar-char"
+      name="name"
+      onChange={[Function]}
+      placeholder="Search by Name"
+    />
+    <button
+      className="search-bar-name"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <div
+    className="chars-cards"
+  />
+  <div
+    className=" d-flex prev-next-btns"
+  >
+    <button
+      className="prev-next-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Previous
+    </button>
+    <button
+      className="prev-next-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
