@@ -28,12 +28,6 @@ export const setSelectedCharacter = ({ character, dispatch }) => {
   dispatch(characters(character, DETAILS));
 };
 
-/* export const getName = (name, dispatch) => {
-  connectCharApi(name).then(({ search }) => {
-    dispatch(characters(search));
-  });
-}; */
-
 const characterReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHARACTERS:

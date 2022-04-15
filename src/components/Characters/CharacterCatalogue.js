@@ -23,19 +23,28 @@ const CharacterCatalogue = ({
         () => {
           if (status === 'Dead') {
             return (
-              <div className="status-red white">{status}</div>
+              <div className="status-red white">
+                <p>{status}</p>
+              </div>
             );
           } if (status === 'Alive') {
             return (
-              <div className="status-green white">{status}</div>
+              <div className="status-green white">
+                <p>{status}</p>
+              </div>
             );
           } return (
-            <div className="status-gray white">{status}</div>
+            <div className="status-gray white">
+              <p>{status}</p>
+            </div>
           );
         }
       )()}
-      <h3 className="d-flex white location">{location.name}</h3>
-
+      <h3 className="d-flex white location">
+        Last location known:
+        <br />
+        {location.name}
+      </h3>
     </div>
   </div>
 );
