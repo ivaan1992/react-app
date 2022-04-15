@@ -5,17 +5,7 @@ import '../Characters/Characters.css';
 
 const SearchBar = () => {
   const dispatch = useDispatch();
-  /* const filterName = (searchName) => {
-    const nameState = useSelector((state) => state.characterReducer);
-    const dispatch = useDispatch();
-    const resultSearch = nameState.filter((element) => {
-      if (element.name.toString().toLowerCase().include(searchName.toLowerCase())) {
-        return element;
-      } return element;
-    });
 
-    dispatch(resultSearch);
-  }; */
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name } = Object.fromEntries(new FormData(e.target));
@@ -27,14 +17,6 @@ const SearchBar = () => {
       getCharacter({ page: '', name: '', dispatch });
     }
   };
-
-  //   const filter = (searchByName) => {
-  //     const searchResult = getCharacter.filter((char) => {
-  //       if (char.name.toString().toLowerCase().includes(searchByName.toLowerCase)) {
-  //         return char;
-  //       }
-  //     });
-  //   };
 
   return (
     <form className="search-char-form" onSubmit={handleSubmit}>
