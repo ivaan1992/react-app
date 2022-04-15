@@ -3,9 +3,19 @@ import PropTypes from 'prop-types';
 import './Characters.css';
 
 const CharacterCatalogue = ({
-  img, name, status, location, gender, species,
+  img, name, status, location, onClickEvent, gender, species, type,
 }) => (
-  <div className="d-flex card-catalogue">
+  <div
+    className="d-flex card-catalogue"
+    onClick={() => {
+      onClickEvent({
+        img, name, status, location, gender, species, type,
+      });
+    }}
+    role="button"
+    tabIndex={-1}
+    onKeyUp={() => {}}
+  >
     <img src={img} alt={name} />
     <div className="d-flex info-character-catalogue">
       <h1 className="d-flex character-name-cat white">{name}</h1>
@@ -24,8 +34,6 @@ const CharacterCatalogue = ({
           );
         }
       )()}
-      <h3 className="d-flex location white">{gender}</h3>
-      <h3 className="d-flex location white">{species}</h3>
       <h3 className="d-flex white location">{location.name}</h3>
 
     </div>
@@ -39,8 +47,10 @@ CharacterCatalogue.propTypes = {
   location: PropTypes.shape({
     name: PropTypes.string,
   }).isRequired,
-  species: PropTypes.string.isRequired,
+  onClickEvent: PropTypes.func.isRequired,
   gender: PropTypes.string.isRequired,
+  species: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default CharacterCatalogue;
