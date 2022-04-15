@@ -4,11 +4,10 @@ import './Header.css';
 
 const Header = () => (
   <header className="d-flex app-header">
-    <h1>Rick & Morty App</h1>
+    <h1 className="header-title">Rick & Morty App</h1>
     <nav className="d-flex">
-      <NavLink className="links" to="/">Characters</NavLink>
-      <NavLink className="links" to="/Location">Location</NavLink>
-      <NavLink className="links" to="/Episodes">Episodes</NavLink>
+      <NavLink className="d-flex links" to="/">Characters</NavLink>
+      <NavLink className="d-flex links" to="/Episodes">Episodes</NavLink>
     </nav>
   </header>
 );

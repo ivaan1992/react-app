@@ -1,3 +1,4 @@
+/*
 import { React } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -16,4 +17,4 @@ const EpisodeCard = () => {
     )
 }
 
-export default EpisodeCard; 
+export default EpisodeCard;  */

@@ -8,38 +8,46 @@
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  background-color: #24282f;
 }
 
 .chars-cards {
   padding-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 3rem;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .card-catalogue {
-  width: 80%;
+  width: 100%;
+  height: 70vh;
   margin: 0 auto;
   margin-bottom: 3rem;
   border-radius: 1rem;
   background: #3c3e44;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card-catalogue:hover {
+  border: 0.25rem solid #fa9805;
 }
 
 .card-catalogue img {
-  width: 50%;
-  height: 25vh;
+  width: 100%;
+  height: 30vh;
   border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   cursor: pointer;
 }
 
 .info-character-catalogue {
-  padding-left: 2rem;
-  margin-top: 3rem;
-  width: 50%;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
 }
 
 .white {
@@ -47,9 +55,12 @@
 }
 
 .character-name-cat {
-  width: 80%;
-  font-size: 35px;
+  width: 100%;
+  height: 10vh;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .character-name-cat:hover {
@@ -59,12 +70,12 @@
 
 .status-red {
   width: 6rem;
-  height: 2vh;
+  height: 4vh;
   border-radius: 2rem;
   text-align: center;
   background: #af1515;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -73,12 +84,12 @@
 
 .status-green {
   width: 6rem;
-  height: 2vh;
+  height: 4vh;
   border-radius: 2rem;
   text-align: center;
   background: #008000;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -87,14 +98,48 @@
 
 .status-gray {
   width: 6rem;
-  height: 2vh;
+  height: 4vh;
   border-radius: 2rem;
   text-align: center;
-  background: #000;
+  background: rgb(82, 80, 80);
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.location {
+  width: 100%;
+  padding-bottom: 1rem;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.location:hover {
+  color: #1367bb;
+}
+
+.search-char-form {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.search-bar-char {
+  width: 70%;
+  height: 7vh;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  border: 3px solid #1367bb;
+}
+
+.search-bar-name {
+  width: 15%;
+  height: 5vh;
+  background: #1367bb;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  border: none;
 }
