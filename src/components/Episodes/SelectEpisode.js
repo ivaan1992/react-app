@@ -15,7 +15,7 @@ const SelectEpisode = ({ children, onChange }) => {
   };
 
   return (
-    <select name="episodes" onChange={handleChange}>
+    <select className="selector" name="episodes" onChange={handleChange}>
       {children}
     </select>
   );
