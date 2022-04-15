@@ -13,7 +13,6 @@ const App = () => (
       <Route path="/Location" element={<Location />} />
       <Route path="/Episodes" element={<Episodes />} />
     </Routes>
-
   </BrowserRouter>
 );
 

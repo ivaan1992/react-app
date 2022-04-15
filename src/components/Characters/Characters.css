@@ -42,8 +42,11 @@
   width: 50%;
 }
 
-.character-name-cat {
+.white {
   color: #fff;
+}
+
+.character-name-cat {
   width: 80%;
   font-size: 35px;
   margin-bottom: 1rem;
@@ -59,8 +62,7 @@
   height: 2vh;
   border-radius: 2rem;
   text-align: center;
-  background: red;
-  color: #fff;
+  background: #af1515;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -74,8 +76,7 @@
   height: 2vh;
   border-radius: 2rem;
   text-align: center;
-  background: green;
-  color: #fff;
+  background: #008000;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -89,8 +90,7 @@
   height: 2vh;
   border-radius: 2rem;
   text-align: center;
-  background: rgb(70, 70, 70);
-  color: #fff;
+  background: #000;
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 2rem;
