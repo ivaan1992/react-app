@@ -7,8 +7,8 @@ const CharacterCatalogue = ({
 }) => (
   <div className="d-flex card-catalogue">
     <img src={img} alt={name} />
-    <div className="info-character-catalogue">
-      <h1 className="character-name-cat white">{name}</h1>
+    <div className="d-flex info-character-catalogue">
+      <h1 className="d-flex character-name-cat white">{name}</h1>
       {(
         () => {
           if (status === 'Dead') {
@@ -24,7 +24,7 @@ const CharacterCatalogue = ({
           );
         }
       )()}
-      <h3 className="white">{location.name}</h3>
+      <h3 className="d-flex white location">{location.name}</h3>
     </div>
   </div>
 );

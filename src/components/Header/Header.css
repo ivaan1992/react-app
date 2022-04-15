@@ -5,10 +5,26 @@
 .app-header {
   justify-content: space-between;
   align-items: center;
+  height: 8vh;
+}
+
+.header-title {
+  width: 100%;
+  text-align: center;
+  color: #1e90ff;
 }
 
 .links {
   padding-right: 5rem;
   text-decoration: none;
-  color: blue;
+  color: rgb(63, 63, 63);
+  margin-right: 1rem;
+  text-align: center;
+  width: 40%;
+}
+
+.links:hover {
+  color: #1e90ff;
+  font-weight: bold;
+  border-bottom: 5px solid #fa9805;
 }

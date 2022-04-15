@@ -9,7 +9,16 @@
 }
 
 .prev-next-btn {
-  margin-right: 4rem;
-  width: 10rem;
+  width: 5rem;
   height: 5vh;
+  margin-right: 2rem;
+  background: #fa9805;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border: none;
+}
+
+.prev-next-btn:hover {
+  background:#1367bb;
 }

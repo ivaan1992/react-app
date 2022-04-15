@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { getCharacter } from '../../redux/Characters/CharactersRedux';
+import '../Characters/Characters.css';
 
 const SearchBar = () => {
   const dispatch = useDispatch();
@@ -36,13 +37,14 @@ const SearchBar = () => {
   //   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="search-char-form" onSubmit={handleSubmit}>
       <input
         onChange={handleChange}
         name="name"
         placeholder="Search by Name"
+        className="search-bar-char"
       />
-      <button type="submit">Search</button>
+      <button className="search-bar-name" type="submit">Search</button>
     </form>
   );
 };
