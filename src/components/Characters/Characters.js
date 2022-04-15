@@ -1,14 +1,15 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 import CharacterCatalogue from './CharacterCatalogue';
 import PrevNextBtns from './PrevNextBtns';
+import SearchBar from '../Search/SearchBar';
 import './Characters.css';
 
 const Characters = () => {
-  const chars = useSelector((state) => state.characterReducer);
+  const chars = useSelector((state) => state.characterReducer.chars);
 
   return (
     <div className="d-flex chars-container">
+      <SearchBar />
       <div className="chars-cards">
         {
             chars.map(({

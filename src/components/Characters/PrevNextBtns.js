@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getCharacter } from '../../redux/Characters/CharactersRedux';
 import './PrevNextBtns.css';
 
 const PrevNextBtns = () => {
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
+  const name = useSelector((state) => state.characterReducer.name);
 
   useEffect(() => {
-    getCharacter(page, dispatch);
+    getCharacter({ page, dispatch, name });
   }, [page]);
 
   return (
