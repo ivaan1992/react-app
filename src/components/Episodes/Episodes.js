@@ -58,7 +58,7 @@ const Episodes = () => {
         </div>
         <div className="chars">
           {chars.map(({
-            image, id, location, name, status,
+            image, id, location, name, status, species, type, gender,
           }) => (
             <CharacterCatalogue
               img={image}
@@ -66,6 +66,9 @@ const Episodes = () => {
               location={location}
               name={name}
               status={status}
+              species={species}
+              type={type}
+              gender={gender}
               onClickEvent={handleSelectedChar}
             />
           ))}
