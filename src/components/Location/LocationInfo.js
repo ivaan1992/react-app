@@ -17,7 +17,6 @@ LocationInfo.propTypes = {
   type: PropTypes.string.isRequired,
   dimension: PropTypes.string.isRequired,
   residents: PropTypes.string.isRequired,
-  // image: PropTypes.string.isRequired,
 };
 
 export default LocationInfo;
